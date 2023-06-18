@@ -13,11 +13,11 @@ class CustomProfileScreen extends ConsumerWidget {
     return ProfileScreen(
       appBar: AppBar(title: const Text('Profile')),
       providers: authProviders,
-      actions: [
-        SignedOutAction((context) {
-          context.goNamed(AppRoute.signIn.name);
-        }),
-      ],
+      // actions: [
+      //   SignedOutAction((context) {
+      //     context.goNamed(AppRoute.signIn.name);
+      //   }),
+      // ],
     );
   }
 }

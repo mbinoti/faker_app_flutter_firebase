@@ -14,14 +14,14 @@ class CustomSignInScreen extends ConsumerWidget {
       appBar: AppBar(title: const Text('Sign in')),
       body: SignInScreen(
         providers: authProviders,
-        actions: [
-          AuthStateChangeAction<SignedIn>((context, state) {
-            context.goNamed(AppRoute.profile.name);
-          }),
-          AuthStateChangeAction<UserCreated>((context, state) {
-            context.goNamed(AppRoute.profile.name);
-          }),
-        ],
+        // actions: [
+        //   AuthStateChangeAction<SignedIn>((context, state) {
+        //     context.goNamed(AppRoute.profile.name);
+        //   }),
+        //   AuthStateChangeAction<UserCreated>((context, state) {
+        //     context.goNamed(AppRoute.profile.name);
+        //   }),
+        // ],
       ),
     );
   }
