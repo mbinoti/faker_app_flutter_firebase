@@ -44,6 +44,7 @@ dependencies:
   equatable: ^2.0.5
   cloud_firestore: ^4.8.1
   firebase_ui_firestore: ^1.5.3
+  faker: ^2.1.0
 
 dev_dependencies:
   flutter_test:
