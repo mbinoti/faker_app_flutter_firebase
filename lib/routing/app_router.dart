@@ -28,7 +28,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
           return '/home';
         }
       } else {
-        if (state.location == '/profile') {
+        if (state.location.startsWith('/home')) {
           return '/sign-in';
         }
       }

@@ -55,7 +55,7 @@ class JobsListView extends ConsumerWidget {
           background: const ColoredBox(color: Colors.red),
           direction: DismissDirection.endToStart,
           onDismissed: (direction) {
-            ref.read(firestoreRepositoryProvider).deleteJob(user!.uid, doc.id);
+            ref.read(firestoreRepositoryProvider).deleteJob(user.uid, doc.id);
           },
           child: ListTile(
             title: Text(job.title),
