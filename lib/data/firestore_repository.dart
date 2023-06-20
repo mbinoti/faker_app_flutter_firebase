@@ -11,6 +11,7 @@ class FirestoreRepository {
         'uid': uid,
         'title': title,
         'company': company,
+        'createdAt': FieldValue.serverTimestamp(),
       });
 
   Future<void> updateJob(
